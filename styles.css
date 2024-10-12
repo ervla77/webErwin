@@ -1,0 +1,100 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --red: #EB1D36;
+    --light-red: #FA9494;
+    --sky-blue: #CFD2CF;
+    --very-light-red: #F5EDDC;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-red);
+}
+
+.menu {
+    display: none;
+}
+
+.logo {
+    width: 150px;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-left ul, .navbar-rigth ul {
+    list-style: none;
+    padding-top: 68px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.navbar-icon {
+    width: 42px;
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-left ul {
+    margin-left: 12px;
+}
+
+.navbar-left ul li a, .navbar-right ul li a {
+    text-decoration: none;
+    color: var(--sky-blue);
+    border: 1px solid var(--white);
+    padding: 8px;
+    border-radius: 8px;
+    font-size: var(--md);
+} 
+
+.navbar-left ul li a:hover, .navbar-right ul li a:hover {
+      border: 1px solid var(--very-light-red);
+      color: var(--red);
+}
+
+.navbar-email {
+    color: var(--very-light-red);
+    font-size: var(--sm);
+}
+
+.navbar-email {
+    margin-right: 20px;
+}
+
+@media (max-width: 640px) {
+    .menu {
+        display: block;
+    }
+    .navbar-left ul {
+        display: none;
+    }
+    .navbar-rigth ul {
+        display: none;
+    }
+}
+    
+     
+  
+
